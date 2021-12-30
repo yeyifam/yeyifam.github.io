@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: url(images/PCbackground3.jpg) no-repeat center;
+    background: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    height: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, .5);
+    color: #Fff;
+    display: flex;
+    font-display: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#content-left{
+    margin-right: 50px;
+}
+#content-left>li{
+    display: flex;
+    font-display: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+#content-left>li i{
+    width: 5px;
+    height: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+#content-right{
+    width: 500px;
+}
+#content-right>h3{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ababab;
+    padding-bottom: 5px;
+}
+#content-right>div>span{
+    background: sandybrown;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#content-right>div>span:nth-child(2n){
+    background: royalblue;
+}
+#content-right>p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#snowflakeD{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+#snowflakeD>div{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* background-color: pink; */
+}
+.snowflake{
+    width: 50px;
+    height: 50px;
+    animation: myfirst 5s;
+    -webkit-animation: myfirst 5s ease-in-out;
+    position:fixed;
+    top: -50px;
+    opacity: 1;
+    animation-fill-mode:forwards;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: -2;
+}
+@keyframes myfirst {
+    from {
+        top: -50px;
+    }
+    to {
+        top:110%;
+        opacity: 0;
+    }
+}
